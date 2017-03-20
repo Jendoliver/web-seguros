@@ -1,0 +1,32 @@
+/*
+*
+*    fonts.css: FONTS STYLESHEET
+*
+*/
+
+/*******************
+    INCLUDED FONTS
+********************/
+@font-face 
+{
+    font-family: oldtown;    /* Nom que li volem posar a la font */
+    src: url(fonts/OldTown.ttf);     /* url de la fuente guardada en el servidore */
+    /* A la hora de aplicar la fuente solo hace falta que pongamos el nombre que le hemos dado */
+}
+
+/****************
+    STYLES
+*****************/
+
+/********* GENERAL **********/
+body { font: 400 15px/1.8 Lato, sans-serif; }
+h1 { font-size: 100px; font-family: oldtown; }
+
+/********* NAVBAR *********/
+.navbar 
+{ 
+    font-family: Montserrat, sans-serif; 
+    font-size: 11px !important;
+    letter-spacing: 4px;
+}
+

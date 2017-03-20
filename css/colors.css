@@ -1,0 +1,25 @@
+/*
+*
+*    colors.css: COLORS STYLESHEET
+*
+*/
+
+/******* GENERAL *********/
+body { background-color: #e6e6e5; color: #777; }
+h1 { color: black; }
+
+/******* NAVBAR ********/
+.navbar { background-color: #2d2d30; }
+.navbar li a, .navbar .navbar-brand { color: #d5d5d5 !important; }
+.nav-tabs li a { color: #777; }
+.navbar-nav li a:hover { color: #fff !important; }
+.navbar-nav .active a { color: #fff !important; background-color: #29292c !important; }
+.navbar-default .navbar-toggle { border-color: transparent; }
+.open .dropdown-toggle { color: #fff; background-color: #555 !important; }
+.dropdown-menu li a { color: #000 !important; }
+.dropdown-menu li a:hover { background-color: red !important; }
+
+/****** CAROUSEL *******/
+.carousel-caption { color: black; }
+
+.container { color: black; }

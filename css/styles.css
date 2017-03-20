@@ -1,0 +1,21 @@
+.justified { text-align: justify; }
+
+.carousel-inner img 
+{
+  /*-webkit-filter: grayscale(90%);*/
+  /*filter: grayscale(90%); make all photos black and white */ 
+  width: 100%; /* Set width to 100% */
+  height: auto;
+  margin: auto;
+}
+
+.navbar 
+{
+  margin-bottom: 0;
+  border: 0;
+  opacity: 0.9;
+}
+
+.container { margin-bottom: 100px; }
+.input-group input { border-radius: 100px; }
+.input-group div button { border-radius: 100px; }
