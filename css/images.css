@@ -1,0 +1,15 @@
+/*
+*
+*    images.css: IMAGES STYLESHEET
+*
+*/
+
+/***** BACKGROUND IMAGES *****/
+.bg1 {background-image: url(../img/prova/bg-2.jpg); filter: brightness(0.5);}
+.bg2 {background-image: url(../img/prova/bg-4.jpg);}
+.bg3 {background-image: url(../img/prova/bg-5.jpg);}
+.bg4 {background-image: url(../img/prova/bg-7.jpg);}
+.bg5 {background-image: url(../img/prova/bg-8.jpg);}
+
+/***** FLOATING IMAGES *****/
+.floating-img { filter: none !important; }

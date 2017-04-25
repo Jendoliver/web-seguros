@@ -1,3 +1,9 @@
+html, body
+{
+  width: 100%;
+  height: 100%;
+}
+
 .justified { text-align: justify; }
 
 .carousel-inner img 
@@ -9,8 +15,12 @@
   margin: auto;
 }
 
+#logo { margin-top:-15px; height: inherit; width: auto; }
+
 .navbar 
 {
+  height: 80px;
+  padding-top: 15px;
   margin-bottom: 0;
   border: 0;
   opacity: 0.9;
@@ -19,3 +29,31 @@
 .container { margin-bottom: 100px; }
 .input-group input { border-radius: 100px; }
 .input-group div button { border-radius: 100px; }
+
+/***********
+    MAIN 
+************/
+#main { padding: 0px !important; }
+
+/*PARALLAX BACKGROUNDS*/
+article { position: relative; }
+#sub-bg1
+{
+  position: absolute;
+  z-index: -1;
+}
+
+.my-container{width: 100%; float:left; padding:0;margin:50px 0 0 0;}
+.full-panel {
+background-attachment: fixed;
+background-position: 50% 0;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+position: relative;
+}
+.in-panel {position: relative;width:970px;margin: 0 auto;min-height: 600px;padding-top:50px}
+.in-panel h2{color: #fff; font-size: 30px; background: #fd4c5b;padding:10px 20px; text-transform: uppercase;float:left;margin-bottom: 20px}
+.in-panel p{font-size: 20px;margin-bottom:40px;clear:both;}
