@@ -10,6 +10,7 @@
 .bg3 {background-image: url(../img/prova/bg-5.jpg);}
 .bg4 {background-image: url(../img/prova/bg-7.jpg);}
 .bg5 {background-image: url(../img/prova/bg-8.jpg);}
+.bg6 {background-color: #000; }
 
 /***** FLOATING IMAGES *****/
 .floating-img { filter: none !important; }

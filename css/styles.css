@@ -4,6 +4,12 @@ html, body
   height: 100%;
 }
 
+footer
+{
+  width: 100%;
+  height: 200px;
+}
+
 .justified { text-align: justify; }
 
 .carousel-inner img 
@@ -15,16 +21,22 @@ html, body
   margin: auto;
 }
 
-#logo { margin-top:-15px; height: inherit; width: auto; }
-
 .navbar 
 {
-  height: 80px;
-  padding-top: 15px;
+  /*padding-top: 15px;*/
   margin-bottom: 0;
   border: 0;
-  opacity: 0.9;
 }
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 5px; /* firefox bug fix */
+  width: auto;
+}
+.navbar-nav .active { border-radius: 5px !important; }
+.navbar-nav .active a { border-radius: 5px !important; }
 
 .container { margin-bottom: 100px; }
 .input-group input { border-radius: 100px; }
@@ -33,27 +45,38 @@ html, body
 /***********
     MAIN 
 ************/
-#main { padding: 0px !important; }
 
 /*PARALLAX BACKGROUNDS*/
-article { position: relative; }
-#sub-bg1
+.main-container {width: 100%; padding: 0; margin: 0;}
+.full-panel 
 {
-  position: absolute;
-  z-index: -1;
-}
-
-.my-container{width: 100%; float:left; padding:0;margin:50px 0 0 0;}
-.full-panel {
-background-attachment: fixed;
-background-position: 50% 0;
-background-repeat: no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-position: relative;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
 }
 .in-panel {position: relative;width:970px;margin: 0 auto;min-height: 600px;padding-top:50px}
 .in-panel h2{color: #fff; font-size: 30px; background: #fd4c5b;padding:10px 20px; text-transform: uppercase;float:left;margin-bottom: 20px}
 .in-panel p{font-size: 20px;margin-bottom:40px;clear:both;}
+
+/*LINES*/
+.black-line{ margin:auto; margin-bottom: 2%;  z-index:1;  width:165px;  height:1px; background:#000}
+.white-line{ margin:auto; margin-bottom: 2%;  z-index:1;  width:165px;  height:1px;  background:#fff}
+.right { margin-right: 0; }
+.left { margin-left: 0; }
+
+/****** BODY ******/
+
+/*HEADERS*/
+.righth1 { text-align: right; }
+.lefth1 { text-align: left; }
+.section-text { text-align: justify; font-weight: bold; font-size: 20px;}
+
+/*FORM*/
+#title-form { margin:0 0 35px 0; }
+textarea .form-control { height:100px; }
+#title-description { margin:0 0 25px; }

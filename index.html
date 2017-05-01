@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <!-- BOOTSTRAP & JQUERY -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- STYLESHEETS -->
@@ -12,6 +13,11 @@
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/images.css">
+    <!-- SLICK -->
+    <script src="libs/slick-1.6.0/slick/slick.min.js" type="text/javascript"></script>
+    <script src="js/slick.js" type="text/javascript"></script>
+    <link href="libs/slick-1.6.0/slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="libs/slick-1.6.0/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
     <!-- GMAP -->
     <script src="libs/gmap3.min.js" type="text/javascript"></script>
     <!-- STELLAR -->
@@ -21,13 +27,13 @@
     <script src="js/smoothscroll.js" type="text/javascript"></script>
     <!-- POSHY ANIMATIONS -->
     <link rel="stylesheet" href="css/animations.css">
-    <title>ORENCIO MONLLOR</title>
+    <title>SEGUROS MONLLOR</title>
 </head>
-<body data-spy="scroll" data-target="#myNavbar" id="myPage">
+<body data-spy="scroll" data-target="#myNavbar" data-offset="55" id="myPage">
     <!-- ==========================
         NAVIGATION MENU
     ============================== -->
-    <nav class="navbar navbar-default navbar-fixed-top" id="myNavbar">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -35,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-                <a class="navbar-brand" href="#myPage"><img id="logo" class="img-responsive" src="img/logo.PNG"></img></a> <!-- ************************** TODO: SET IMAGE -->
+                <a class="navbar-brand" href="#myPage"><img id="logo" src="img/logo.PNG"></img></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-left">
@@ -72,7 +78,7 @@
             </ol>
     
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox" data-stellar-background-ratio="0.5">
+            <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img src="img/caucion.jpg" width="1200" height="700">
                     <div class="carousel-caption">
@@ -106,9 +112,10 @@
     <!-- ==================
         MAIN SECTION
     ======================= -->
-    <div class="my-container">
-        <div class="row">
-            <div class="col-md-12 full-panel bg1" id="pub1" data-stellar-background-ratio="0">
+    <div class="main-container">
+        <!-- SOBRE NOSOTROS 1 (presentación texto derecha, más de 30 años de experiencia)-->
+        <div id="pub1" class="row">
+            <div class="col-md-12 full-panel bg1" data-stellar-background-ratio="0">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-4">
@@ -119,39 +126,143 @@
                     <div class="col-md-2"></div>
                     <div class="col-md-4">
                         <div class="animatedParent animateOnce">
-                            <h1 class="animated fadeIn righth1">Somos lo mejor de lo mejor</h1>
+                            <h1 class="righth1 animated fadeInRight">Más de 30 años de experiencia</h1>
+                            <div class="black-line right animated fadeInRight"></div>
+                            <div class="section-text animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu condimentum lacus, in condimentum eros. Sed interdum dapibus augue, in luctus tortor commodo sed. Pellentesque sodales consequat justo, ut venenatis est ultricies vitae. Nunc aliquet elit ipsum, vel consectetur lacus ornare quis. Proin nulla est, feugiat id magna vel, commodo dignissim turpis. Proin pulvinar erat at nisi vulputate condimentum. Nullam rutrum at leo at aliquam. Vestibulum a quam quam. Donec gravida, nisl ac ultricies aliquam, leo lectus vestibulum ante, et bibendum diam arcu bibendum dolor. Aliquam auctor justo et nulla facilisis finibus. Proin volutpat sodales erat, id convallis quam finibus et. Sed accumsan nisi et augue sollicitudin, sit amet cursus massa tristique. In sagittis nec purus id aliquet. Nullam vel nunc quis massa feugiat porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi aliquam diam non viverra sodales.</div>
                         </div>
-                        <p>Le damos buena caña</p>
                     </div>
                     <div class="col-md-1"></div>
                 </div>
             </div>
-            <div class="col-md-12 full-panel bg2" id="correduria" data-stellar-background-ratio="0">
-                <div class="in-panel" id="correduria-text">
-                [...]
+        </div>
+        <!-- LA CORREDURÍA (centro) -->
+        <div id="correduria" class="row">
+            <div class="col-md-12 full-panel bg2" data-stellar-background-ratio="0">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="animatedParent animateOnce">
+                            <h1 class="animated fadeIn">La correduría</h1>
+                            <div class="black-line animated fadeIn black-line"></div>
+                            <div class="section-text animated fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu condimentum lacus, in condimentum eros. Sed interdum dapibus augue, in luctus tortor commodo sed. Pellentesque sodales consequat justo, ut venenatis est ultricies vitae. Nunc aliquet elit ipsum, vel consectetur lacus ornare quis. Proin nulla est, feugiat id magna vel, commodo dignissim turpis. Proin pulvinar erat at nisi vulputate condimentum. Nullam rutrum at leo at aliquam. Vestibulum a quam quam. Donec gravida, nisl ac ultricies aliquam, leo lectus vestibulum ante, et bibendum diam arcu bibendum dolor. Aliquam auctor justo et nulla facilisis finibus. Proin volutpat sodales erat, id convallis quam finibus et. Sed accumsan nisi et augue sollicitudin, sit amet cursus massa tristique. In sagittis nec purus id aliquet. Nullam vel nunc quis massa feugiat porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi aliquam diam non viverra sodales.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
                 </div>
             </div>
-            <div class="col-md-12 full-panel bg3" id="pub2" data-stellar-background-ratio="0">
-                <div class="in-panel" id="pub2-text">
-                [...]
+        </div>
+        <!-- SOBRE NOSOTROS 2 (texto izq, especialistas en seguros de caución)-->
+        <div id="pub2" class="row">
+            <div class="col-md-12 full-panel bg3" data-stellar-background-ratio="0">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <div class="animatedParent animateOnce">
+                            <h1 class="lefth1 animated fadeInLeft">Especialistas en seguros de caución</h1>
+                            <div class="black-line left animated fadeInLeft"></div>
+                            <div class="section-text animated fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu condimentum lacus, in condimentum eros. Sed interdum dapibus augue, in luctus tortor commodo sed. Pellentesque sodales consequat justo, ut venenatis est ultricies vitae. Nunc aliquet elit ipsum, vel consectetur lacus ornare quis. Proin nulla est, feugiat id magna vel, commodo dignissim turpis. Proin pulvinar erat at nisi vulputate condimentum. Nullam rutrum at leo at aliquam. Vestibulum a quam quam. Donec gravida, nisl ac ultricies aliquam, leo lectus vestibulum ante, et bibendum diam arcu bibendum dolor. Aliquam auctor justo et nulla facilisis finibus. Proin volutpat sodales erat, id convallis quam finibus et. Sed accumsan nisi et augue sollicitudin, sit amet cursus massa tristique. In sagittis nec purus id aliquet. Nullam vel nunc quis massa feugiat porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi aliquam diam non viverra sodales.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="animatedParent animateOnce">
+                            <img class="floating-img animated fadeInRight" src="img/prova/vallve-filla.png"/>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
-            <div class="col-md-12 full-panel bg4" id="particulares" data-stellar-background-ratio="0">
-                <div class="in-panel" id="particulares-text">
-                [...]
+        </div>
+        <!-- SEGUROS PARA PARTICULARES (texto izq)-->
+        <div id="particulares" class="row">
+            <div class="col-md-12 full-panel bg4" data-stellar-background-ratio="0">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <div class="animatedParent animateOnce">
+                            <h1 class="lefth1 animated fadeInLeft">Seguros para particulares</h1>
+                            <div class="black-line left animated fadeInLeft"></div>
+                            <div class="section-text animated fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu condimentum lacus, in condimentum eros. Sed interdum dapibus augue, in luctus tortor commodo sed. Pellentesque sodales consequat justo, ut venenatis est ultricies vitae. Nunc aliquet elit ipsum, vel consectetur lacus ornare quis. Proin nulla est, feugiat id magna vel, commodo dignissim turpis. Proin pulvinar erat at nisi vulputate condimentum. Nullam rutrum at leo at aliquam. Vestibulum a quam quam. Donec gravida, nisl ac ultricies aliquam, leo lectus vestibulum ante, et bibendum diam arcu bibendum dolor. Aliquam auctor justo et nulla facilisis finibus. Proin volutpat sodales erat, id convallis quam finibus et. Sed accumsan nisi et augue sollicitudin, sit amet cursus massa tristique. In sagittis nec purus id aliquet. Nullam vel nunc quis massa feugiat porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi aliquam diam non viverra sodales.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="animatedParent animateOnce">
+                            <img class="floating-img animated fadeInRight" src="img/prova/vallve-filla2.png"/> <!--  IMG PARTICULARES -->
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
-            <div class="col-md-12 full-panel bg5" id="pub3">
+        </div>
+        <!-- SEGUROS PARA EMPRESAS (texto der) -->
+        <div id="empresas" class="row">
+            <div class="col-md-12 full-panel bg5" data-stellar-background-ratio="0">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <div class="animatedParent animateOnce">
+                            <img class="floating-img animated fadeInLeft" src="img/prova/vallve-pare.png"/>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="animatedParent animateOnce">
+                            <h1 class="righth1 animated fadeInRight">Seguros para empresas</h1>
+                            <div class="black-line right animated fadeInRight"></div>
+                            <div class="section-text animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu condimentum lacus, in condimentum eros. Sed interdum dapibus augue, in luctus tortor commodo sed. Pellentesque sodales consequat justo, ut venenatis est ultricies vitae. Nunc aliquet elit ipsum, vel consectetur lacus ornare quis. Proin nulla est, feugiat id magna vel, commodo dignissim turpis. Proin pulvinar erat at nisi vulputate condimentum. Nullam rutrum at leo at aliquam. Vestibulum a quam quam. Donec gravida, nisl ac ultricies aliquam, leo lectus vestibulum ante, et bibendum diam arcu bibendum dolor. Aliquam auctor justo et nulla facilisis finibus. Proin volutpat sodales erat, id convallis quam finibus et. Sed accumsan nisi et augue sollicitudin, sit amet cursus massa tristique. In sagittis nec purus id aliquet. Nullam vel nunc quis massa feugiat porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi aliquam diam non viverra sodales.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+        <!-- SOBRE NOSOTROS 3 (nuestro equipo? slick) -->
+        <div id="pub3" class="row bg6">
+            <div class="col-md-12 full-panel">
                 <div class="in-panel" id="pub3-text">
                 [...]
                 </div>
             </div>
-            <div class="col-md-12 full-panel" id="empresas">
-                <div class="in-panel" id="empresas-text">
-                [...]
+        </div>
+        <!-- =================
+            CONTACT FORM
+        ====================== -->
+        <div id="contacto" class="content-section text-center">
+            <div class="contact-section">
+                <div class="container">
+                    <h2 id="title-form">¿Tienes alguna duda?</h2>
+                    <p id="title-description">¡Contáctanos a través del siguiente formulario o visita nuestras redes sociales!</p>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" id="contact-name" placeholder="Jane Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="contact-email" placeholder="jane.doe@ejemplo.com">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="msg">Tu mensaje</label>
+                                    <textarea id="msg" class="form-control"></textarea> 
+                                </div>
+                                <button type="submit" class="btn btn-default">Enviar mensaje</button>
+                            </form>
+                            <hr>
+                            <h3>Nuestras redes sociales</h3>
+                            <ul class="list-inline banner-social-buttons">
+                            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
+                            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+                            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- END CONTACT FORM -->
     </div>
     <!-- END MAIN SECTION -->
     
@@ -159,8 +270,15 @@
         FOOTER
     ====================== -->
     <footer>
-        mmmmmmmm
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1>FOOTER</h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
     </footer>
+    <!-- END FOOTER -->
     <!-- ANIMATE-IT -->
     <script src="js/css3-animate-it.js" type="text/javascript"></script>
 </body>

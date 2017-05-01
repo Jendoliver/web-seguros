@@ -20,7 +20,7 @@
 
 /********* GENERAL **********/
 body { font: 400 15px/1.8; font-family: rawsans; }
-h1 { font-size: 100px; font-family: rawsans; }
+h1 { font-size: 65px; font-family: rawsans; }
 .righth1 { filter: drop-shadow(-3px, 3px, 12px, black) !important; }
 
 /********* NAVBAR *********/
@@ -29,5 +29,18 @@ h1 { font-size: 100px; font-family: rawsans; }
     font-family: rawsans, sans-serif; 
     font-size: 15px !important;
     letter-spacing: 3px;
+    font-weight: bold;
 }
 
+/*FORM*/
+#title-form
+{
+    font-family: 'rawsans', cursive;
+	text-transform: uppercase;
+	letter-spacing:1px;
+}
+#title-descriptiom
+{
+	font-size:18px;
+	line-height:1.6em;
+}
