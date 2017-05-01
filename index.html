@@ -20,6 +20,8 @@
     <link href="libs/slick-1.6.0/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
     <!-- GMAP -->
     <script src="libs/gmap3.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3lxIwFb2SDyU-zt9TerWarP4i-Cm04E0&region=GB"></script>
+    <script src="js/gmap.js" type="text/javascript"></script>
     <!-- STELLAR -->
     <script src="libs/jquery.stellar.min.js"></script>
     <!-- SMOOTH PLUGINS -->
@@ -27,7 +29,7 @@
     <script src="js/smoothscroll.js" type="text/javascript"></script>
     <!-- POSHY ANIMATIONS -->
     <link rel="stylesheet" href="css/animations.css">
-    <title>SEGUROS MONLLOR</title>
+    <title>ASSEGURANCES MONLLOR</title>
 </head>
 <body data-spy="scroll" data-target="#myNavbar" data-offset="55" id="myPage">
     <!-- ==========================
@@ -142,7 +144,7 @@
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
                         <div class="animatedParent animateOnce">
-                            <h1 class="animated fadeIn">La correduría</h1>
+                            <h1 class="animated fadeIn centered">La correduría</h1>
                             <div class="black-line animated fadeIn black-line"></div>
                             <div class="section-text animated fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu condimentum lacus, in condimentum eros. Sed interdum dapibus augue, in luctus tortor commodo sed. Pellentesque sodales consequat justo, ut venenatis est ultricies vitae. Nunc aliquet elit ipsum, vel consectetur lacus ornare quis. Proin nulla est, feugiat id magna vel, commodo dignissim turpis. Proin pulvinar erat at nisi vulputate condimentum. Nullam rutrum at leo at aliquam. Vestibulum a quam quam. Donec gravida, nisl ac ultricies aliquam, leo lectus vestibulum ante, et bibendum diam arcu bibendum dolor. Aliquam auctor justo et nulla facilisis finibus. Proin volutpat sodales erat, id convallis quam finibus et. Sed accumsan nisi et augue sollicitudin, sit amet cursus massa tristique. In sagittis nec purus id aliquet. Nullam vel nunc quis massa feugiat porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi aliquam diam non viverra sodales.</div>
                         </div>
@@ -226,11 +228,21 @@
             </div>
         </div>
         <!-- =================
-            CONTACT FORM
+            CONTACT (gmap and form)
         ====================== -->
         <div id="contacto" class="content-section text-center">
-            <div class="contact-section">
-                <div class="container">
+            <div class="contact-section animatedParent animateOnce">
+                <div class="google-map animated fadeInLeft">
+                    <h1>ENCUÉNTRANOS</h1>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div id="map"></div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+                <div class="contact-container">
                     <h2 id="title-form">¿Tienes alguna duda?</h2>
                     <p id="title-description">¡Contáctanos a través del siguiente formulario o visita nuestras redes sociales!</p>
                     <div class="row">
@@ -272,8 +284,9 @@
     <footer>
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <h1>FOOTER</h1>
+            <div class="col-md-6 centered animatedParent animateOnce">
+                <h1 class="text-primary-color shadow animated fadeIn">Assegurances Monllor</h1>
+                <h3 class="text-primary-color shadow animated fadeIn">Todos los derechos reservados ©</h3>
             </div>
             <div class="col-md-3"></div>
         </div>

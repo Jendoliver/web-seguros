@@ -21,7 +21,7 @@
 /********* GENERAL **********/
 body { font: 400 15px/1.8; font-family: rawsans; }
 h1 { font-size: 65px; font-family: rawsans; }
-.righth1 { filter: drop-shadow(-3px, 3px, 12px, black) !important; }
+.shadow { filter: drop-shadow(-3px, 3px, 12px, black) !important; }
 
 /********* NAVBAR *********/
 .navbar 

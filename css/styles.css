@@ -11,6 +11,7 @@ footer
 }
 
 .justified { text-align: justify; }
+.centered { text-align: center; }
 
 .carousel-inner img 
 {
@@ -38,7 +39,7 @@ footer
 .navbar-nav .active { border-radius: 5px !important; }
 .navbar-nav .active a { border-radius: 5px !important; }
 
-.container { margin-bottom: 100px; }
+.contact-container { margin: 150px; }
 .input-group input { border-radius: 100px; }
 .input-group div button { border-radius: 100px; }
 
@@ -80,3 +81,17 @@ footer
 #title-form { margin:0 0 35px 0; }
 textarea .form-control { height:100px; }
 #title-description { margin:0 0 25px; }
+
+/*GMAP*/
+.google-map { margin: 70px; }
+#map-container 
+{ 
+  display: inline-block !important; 
+  width: 500px !important;
+  height: 400px !important;
+}
+#map
+{
+  width: 500px;
+  height: 400px;
+}
