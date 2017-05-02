@@ -6,6 +6,7 @@ html, body
 
 footer
 {
+  margin-top: 50px;
   width: 100%;
   height: 200px;
 }
@@ -82,7 +83,7 @@ footer
 textarea .form-control { height:100px; }
 #title-description { margin:0 0 25px; }
 
-/*GMAP*/
+/****** GMAP ******/
 .google-map { margin: 70px; }
 #map-container 
 { 
@@ -95,3 +96,12 @@ textarea .form-control { height:100px; }
   width: 500px;
   height: 400px;
 }
+
+/****** SLICK ******/
+#imgs-container { text-align: center; }
+#imgs-container img
+{
+    max-width: 100%;
+    display: inline-block !important;
+}
+
