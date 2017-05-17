@@ -1,6 +1,5 @@
 @media (max-width: 1000px) 
 {
-    .carousel-caption { display: none; }
     .floating-img { display: none; }
     h1 { font-size: 40px; }
 }

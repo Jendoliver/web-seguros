@@ -3,7 +3,7 @@
 $(document).ready(function(){
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
-  $("body").attr("data-offset", $('.navbar').height());
+  $("body").attr("data-offset", $('#lanav').height()+10);
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - $('.navbar').height() // Dynamic offset calculation
+        scrollTop: $(hash).offset().top - ($('#lanav').height()-10) // Dynamic offset calculation
       }, 900, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
@@ -27,4 +27,11 @@ $(document).ready(function(){
       });
     } // End if
   });
+  
+  $(window).resize(changeOffset);
 })
+// http://jqapi.com/
+function changeOffset()
+{
+  $("body").attr("data-offset", $('#lanav').height()+50);
+}
