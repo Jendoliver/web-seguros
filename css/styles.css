@@ -11,6 +11,32 @@ footer
   height: 200px;
 }
 
+#preloader
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00A2FF;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+}
+
+#status
+{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../img/preloader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+
 .justified { text-align: justify; }
 .centered { text-align: center; }
 
