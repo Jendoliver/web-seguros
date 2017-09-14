@@ -12,6 +12,11 @@ footer
   height: 200px;
 }
 
+ul
+{
+  list-style-type: none;
+}
+
 #preloader
 {
   position: absolute;
@@ -103,7 +108,7 @@ footer
 /*HEADERS*/
 .righth1 { text-align: right; }
 .lefth1 { text-align: left; }
-.section-text { text-align: justify; font-weight: bold; font-size: 20px;}
+.section-text { text-align: justify; }
 
 /*FORM*/
 #title-form { margin:0 0 35px 0; }
@@ -131,4 +136,3 @@ textarea .form-control { height:100px; }
     max-width: 100%;
     display: inline-block !important;
 }
-

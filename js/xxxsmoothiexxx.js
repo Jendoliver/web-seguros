@@ -33,5 +33,5 @@ $(document).ready(function(){
 // http://jqapi.com/
 function changeOffset()
 {
-  $("body").attr("data-offset", $('#lanav').height()+50);
+  $("body").attr("data-offset", ($('#lanav').height()+500));
 }
