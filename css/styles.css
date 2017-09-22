@@ -46,7 +46,8 @@ ul
 }
 
 .justified { text-align: justify; }
-.centered { text-align: center; }
+.center { text-align: center; }
+.centered { display: inline-block; }
 
 .carousel-inner img 
 {
