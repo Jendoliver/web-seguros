@@ -2,8 +2,10 @@ html, body
 {
   width: 100%;
   height: 100%;
-  
 }
+
+header { width: 100%; }
+.main-container { width: 100%; }
 
 footer
 {
@@ -104,6 +106,7 @@ ul
 .left { margin-left: 0; }
 
 /****** BODY ******/
+.section { padding-top: 30px; padding-bottom: 30px; }
 
 /*HEADERS*/
 .righth1 { text-align: right; }
