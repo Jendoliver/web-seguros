@@ -15,11 +15,11 @@
 /***** BACKGROUND IMAGES (vectors) *****/
 .bg1 {background-image: url(../img/prova/bg-2.jpg);} /* SOBRE NOSOTROS 1 */
 .bg2 {background-image: url(../img/SVG/correduriabright.svg);} /* CORREDURÍA */
-.bg3 {background-image: url(../img/SVG/DOS_CON_UN_PUZZLE.svg);} /* SOBRE NOSOTROS 2 (especialistas en el caucho)*/
-.bg4 {background-image: url(../img/empresas.jpg);} /* EMPRESAS */
-.bg5 {background-image: url(../img/SVG/particularesdark.svg);} /* PARTICULARES */
+.bg3 {background-image: url(../img/puzle.jpg);} /* SOBRE NOSOTROS 2 (especialistas en el caucho)*/
+.bg4 {background-image: url(../img/empresaslargo.jpg);} /* EMPRESAS */
+.bg5 {background-image: url(../img/particulareslargo.jpg);} /* PARTICULARES */
 .bg6 {background-image: url(../img/teamwork.jpg);} /* SOBRE NOSOTROS 3 */
-.bg7 {background-image: url(../img/SVG/contacto.svg);} /* CONTACTO */
+.bg7 {background-image: url(../img/contactolargo.jpg);} /* CONTACTO */
 
 /***** FLOATING IMAGES *****/
 .floating-img { filter: none !important; }

@@ -4,6 +4,8 @@ html, body
   height: 100%;
 }
 
+body { overflow-x: hidden; }
+
 header { width: 100%; }
 .main-container { width: 100%; }
 
@@ -139,4 +141,14 @@ textarea .form-control { height:100px; }
 {
     max-width: 100%;
     display: inline-block !important;
+}
+
+/*** BUTTONS ***/
+.btn-circle 
+{
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /* adjust line height to align vertically*/
+  padding:0;
+  border-radius: 50%;
 }
