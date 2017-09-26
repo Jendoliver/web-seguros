@@ -1,6 +1,9 @@
-@media (max-width: 1000px) 
+@media (max-width: 800px) 
 {
-    .floating-img { display: none; }
-    h1 { font-size: 40px; }
-    .bg3 {height: 500px; }
+    h1 { font-size: 35px; }
+    h2 { font-size: 25px; }
+    .bg2 { height: 500px; }
+    .bg3 { height: 500px; }
+    .section-text { font-size: 20px; }
+    .list li { font-size: 17px; }
 }

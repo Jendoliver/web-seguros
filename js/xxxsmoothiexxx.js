@@ -6,6 +6,10 @@ $(document).ready(function(){
   $("body").attr("data-offset", $('#lanav').height()+10);
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    
+    if($('.navbar-toggle').css('display') == 'block' && !$(this).siblings().length){ // Collapse navbar on mobile display
+        $('.navbar-collapse').collapse('toggle');
+    }
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -28,10 +32,10 @@ $(document).ready(function(){
     } // End if
   });
   
-  $(window).resize(changeOffset);
+  //$(window).resize(changeOffset);
 })
 // http://jqapi.com/
 function changeOffset()
 {
-  $("body").attr("data-offset", ($('#lanav').height()+500));
+  $("body").attr("data-offset", ($('#lanav').height()));
 }
