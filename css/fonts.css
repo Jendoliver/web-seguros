@@ -23,7 +23,7 @@ body { font: 400 15px/1.8; font-family: rawsans; }
 h1 { font-size: 80px; font-family: rawsans; }
 .list li { font-size: 30px; font-style: italic; }
 .section-text { font-size: 40px; }
-.shadow { filter: drop-shadow(-3px, 3px, 12px, black) !important; }
+.shadow { text-shadow: 2px 2px 3px #000000 !important; }
 
 /********* NAVBAR *********/
 .navbar 

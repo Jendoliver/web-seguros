@@ -1,7 +1,8 @@
 /*global $*/
 $(document).ready(function()
 {
-    $("#status").fadeOut();
-    $("#preloader").delay(1000).fadeOut("slow");
+    $("#status").delay(3000).fadeOut();
+    $("#preloader").delay(3000).fadeOut("slow");
     $("#lanav").addClass("navbar-fixed-top");
+    $("#lanav").show();
 })
