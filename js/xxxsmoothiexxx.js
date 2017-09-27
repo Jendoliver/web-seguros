@@ -32,7 +32,7 @@ $(document).ready(function(){
     } // End if
   });
   
-  //$(window).resize(changeOffset);
+  $(window).resize(changeOffset);
 })
 // http://jqapi.com/
 function changeOffset()
