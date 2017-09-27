@@ -9,9 +9,8 @@
 ********************/
 @font-face 
 {
-    font-family: rawsans;    /* Nom que li volem posar a la font */
-    src: url(fonts/RawengulkSans-094.ttf);     /* url de la fuente guardada en el servidore */
-    /* A la hora de aplicar la fuente solo hace falta que pongamos el nombre que le hemos dado */
+    font-family: rawsans;
+    src: url(fonts/RawengulkSans-094.ttf);
 }
 
 /****************

@@ -5,21 +5,10 @@
 */
 
 /***** BACKGROUND IMAGES *****/
-/*.bg1 {background-image: url(../img/prova/bg-2.jpg);} /* SOBRE NOSOTROS 1 */
-/*.bg2 {background-image: url(../img/prova/bg-4.jpg);} /* CORREDURÍA */
-/*.bg3 {background-image: url(../img/prova/bg-5.jpg);} /* SOBRE NOSOTROS 2 */
-/*.bg4 {background-image: url(../img/prova/bg-7.jpg);} /* EMPRESAS */
-/*.bg5 {background-image: url(../img/prova/bg-8.jpg);} /* PARTICULARES */
-/*.bg6 {background-image: url(../img/teamwork.jpg);} /* SOBRE NOSOTROS 3 */
-
-/***** BACKGROUND IMAGES (vectors) *****/
 .bg1 {background-image: url(../img/prova/bg-2.jpg);} /* SOBRE NOSOTROS 1 */
 .bg2 {background-image: url(../img/correduria.jpg);} /* CORREDURÍA */
 .bg3 {background-image: url(../img/puzle.jpg);} /* SOBRE NOSOTROS 2 (especialistas en el caucho)*/
 .bg4 {background-image: url(../img/empresas.jpg);} /* EMPRESAS */
-.bg5 {background-image: url(../img/particulareslargo.jpg);} /* PARTICULARES */
+.bg5 {background-image: url(../img/particulares.jpg);} /* PARTICULARES */
 .bg6 {background-image: url(../img/teamwork.jpg);} /* SOBRE NOSOTROS 3 */
-.bg7 {background-image: url(../img/contactoleft.jpg);} /* CONTACTO */
-
-/***** FLOATING IMAGES *****/
-.floating-img { filter: none !important; }
+.bg7 {background-image: url(../img/contacto.jpg);} /* CONTACTO */
