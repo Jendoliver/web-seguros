@@ -27,6 +27,9 @@
         <script src="js/gmap.js" type="text/javascript"></script>
         <!-- STELLAR -->
         <script src="libs/jquery.stellar.min.js"></script>
+        <!-- VALIDATOR -->
+        <script src="libs/jquery.validate.min.js"></script>
+        <script src="js/validation.js"></script>
         <!-- SMOOTH PLUGINS -->
         <script src="js/xxxsmoothiexxx.js" type="text/javascript"></script>
         <script src="js/smoothscroll.js" type="text/javascript"></script>
@@ -188,17 +191,17 @@
                                             </div>
                                         </div>
                                         <h2 id="title-description" class="black"><b>¡Contáctanos a través del siguiente formulario o visita nuestras redes sociales!</b></h2>
-                                        <form class="form-horizontal">
+                                        <form id="contactform" action="sendmail.php" method="POST" class="form-horizontal">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="contact-name" placeholder="Nombre y apellido">
+                                                <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Nombre y apellido">
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" class="form-control" id="contact-email" placeholder="Correo electrónico">
+                                                <input type="email" class="form-control" id="contactemail" name="contactemail" placeholder="Correo electrónico">
                                             </div>
                                             <div class="form-group ">
-                                                <textarea id="msg" class="form-control" placeholder="Tu mensaje"></textarea> 
+                                                <textarea id="msg" class="form-control" name="msg" placeholder="Tu mensaje"></textarea> 
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                                            <button id="send" type="submit" class="btn btn-primary">Enviar mensaje</button>
                                         </form>
                                         <hr>
                                         <ul class="list-inline banner-social-buttons">
