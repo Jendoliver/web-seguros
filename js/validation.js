@@ -10,13 +10,13 @@ function validateForm()
 {
     $("#contactform").validate(
     {
-        focusCleanup: true,
+        focusCleanup: false,
         rules: 
         {
             contactname: 
             {
                 required: true,
-                maxlength: 30
+                maxlength: 50
             },
             contactemail: 
             {
@@ -26,7 +26,7 @@ function validateForm()
             msg:
             {
                 required: true,
-                maxlength: 500
+                maxlength: 1000
             }
         },
         messages: 
@@ -34,7 +34,7 @@ function validateForm()
             contactname: 
             {
                 required:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Campo requerido</div>",
-                maxlength:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Introduce menos de 30 caracteres</div>"
+                maxlength:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Introduce menos de 50 caracteres</div>"
             },
             contactemail: 
             {
@@ -45,7 +45,7 @@ function validateForm()
             msg: 
             {
                 required:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Campo requerido</div>",
-                maxlength:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Introduce menos de 500 caracteres</div>"
+                maxlength:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Introduce menos de 1000 caracteres</div>"
             }
         }
     });
