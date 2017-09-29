@@ -4,6 +4,8 @@ $(document).ready(function(){
     $('#imgs-container').css('max-height',$(window).height());
     $('#imgs-container').slick({
         autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
         dots: false,
         arrows: false,
         slidesToShow: 1,

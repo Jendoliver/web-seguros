@@ -6,4 +6,14 @@
     .bg3 { height: 500px; }
     .section-text { font-size: 20px; }
     .list li { font-size: 17px; }
+    #map-container 
+    { 
+      width: 350;
+      height: 350px;
+    }
+    #map
+    {
+      width: 350px;
+      height: 350px;
+    }
 }
